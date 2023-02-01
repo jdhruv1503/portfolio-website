@@ -2456,7 +2456,7 @@ input::-moz-focus-inner {
  *
  * ------------------------------------------------------------------- */
 .s-services {
-  padding-top: 19.2rem;
+  padding-top: 8rem;
   padding-bottom: 16rem;
   background-repeat: no-repeat;
   background-position: center center;
@@ -2500,36 +2500,6 @@ input::-moz-focus-inner {
 .s-services a:focus,
 .s-services a:active {
   color: #ffffff;
-}
-
-.services-list {
-  max-width: 1240px;
-  margin-top: 8.8rem;
-  counter-reset: ctr;
-  position: relative;
-}
-
-.services-list .item-service {
-  margin-bottom: 2.4rem;
-  padding: 0 30px;
-  min-height: 44.8rem;
-}
-
-.services-list .item-service__content {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 3.6rem;
-}
-
-.services-list .item-service__content::before {
-  display: block;
-  content: counter(ctr, decimal-leading-zero) ".";
-  counter-increment: ctr;
-  margin-bottom: 4.8rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 8rem;
-  line-height: 1;
-  color: #f52525;
 }
 
 /* ------------------------------------------------------------------- 
