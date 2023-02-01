@@ -1466,7 +1466,7 @@ input::-moz-focus-inner {
   letter-spacing: .5rem;
   margin-top: 0;
   padding-top: 1.6rem;
-  margin-bottom: 4rem;
+  margin-bottom: 12rem;
   position: relative;
 
   color: #ffffff;
@@ -2457,7 +2457,7 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 .s-services {
   padding-top: 8rem;
-  padding-bottom: 16rem;
+  padding-bottom: 8rem;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -2476,6 +2476,11 @@ input::-moz-focus-inner {
   background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, black 80%);
 }
 
+.s-services .item-service {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .s-services::before {
   content: "";
   position: absolute;
@@ -2488,8 +2493,13 @@ input::-moz-focus-inner {
 }
 
 .s-services h4 {
+  text-align: center;
   font-weight: 400;
   color: #ffffff;
+}
+
+.s-services p {
+  text-align: center;
 }
 
 .s-services a {
