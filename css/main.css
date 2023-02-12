@@ -2496,6 +2496,7 @@ input::-moz-focus-inner {
   text-align: center;
   font-weight: 400;
   color: #ffffff;
+  padding-top: 3rem;
 }
 
 .s-services p {
@@ -2510,6 +2511,44 @@ input::-moz-focus-inner {
 .s-services a:focus,
 .s-services a:active {
   color: #ffffff;
+}
+
+.item-service__content::before{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-service__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.circular-progress{
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: conic-gradient(#7d2ae8 3.6deg, #000000 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circular-progress::before{
+  content: "";
+  position: absolute;
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+.progress-value{
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  color: #7d2ae8;
 }
 
 /* ------------------------------------------------------------------- 
