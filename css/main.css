@@ -2531,7 +2531,7 @@ input::-moz-focus-inner {
   height: 250px;
   width: 250px;
   border-radius: 50%;
-  background: conic-gradient(#7d2ae8 3.6deg, #000000 0deg);
+  background: conic-gradient(#f52525 3.6deg, #000000 0deg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2548,7 +2548,7 @@ input::-moz-focus-inner {
   position: relative;
   font-size: 40px;
   font-weight: 600;
-  color: #7d2ae8;
+  color: #f52525;
 }
 
 /* ------------------------------------------------------------------- 
