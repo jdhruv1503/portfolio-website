@@ -52,22 +52,22 @@ let progress = setInterval(() => {
     }
 
     progressValueAI.textContent = `${progressStartValueAI}%`
-    circularProgressAI.style.background = `conic-gradient(#f52525 ${progressStartValueAI * 3.6}deg, #e0e0e0 0deg)`
+    circularProgressAI.style.background = `conic-gradient(#f52525 ${progressStartValueAI * 3.6}deg, #000000 0deg)`
 
     progressValueDesign.textContent = `${progressStartValueDesign}%`
-    circularProgressDesign.style.background = `conic-gradient(#f52525 ${progressStartValueDesign * 3.6}deg, #e0e0e0 0deg)`
+    circularProgressDesign.style.background = `conic-gradient(#f52525 ${progressStartValueDesign * 3.6}deg, #000000 0deg)`
 
     progressValueDevops.textContent = `${progressStartValueDevops}%`
-    circularProgressDevops.style.background = `conic-gradient(#f52525 ${progressStartValueDevops * 3.6}deg, #e0e0e0 0deg)`
+    circularProgressDevops.style.background = `conic-gradient(#f52525 ${progressStartValueDevops * 3.6}deg, #000000 0deg)`
 
     progressValuePython.textContent = `${progressStartValuePython}%`
-    circularProgressPython.style.background = `conic-gradient(#f52525 ${progressStartValuePython * 3.6}deg, #e0e0e0 0deg)`
+    circularProgressPython.style.background = `conic-gradient(#f52525 ${progressStartValuePython * 3.6}deg, #000000 0deg)`
 
     progressValueSQL.textContent = `${progressStartValueSQL}%`
-    circularProgressSQL.style.background = `conic-gradient(#f52525 ${progressStartValueSQL * 3.6}deg, #e0e0e0 0deg)`
+    circularProgressSQL.style.background = `conic-gradient(#f52525 ${progressStartValueSQL * 3.6}deg, #000000 0deg)`
 
     progressValueWebdev.textContent = `${progressStartValueWebdev}%`
-    circularProgressWebdev.style.background = `conic-gradient(#f52525 ${progressStartValueWebdev * 3.6}deg, #e0e0e0 0deg)`
+    circularProgressWebdev.style.background = `conic-gradient(#f52525 ${progressStartValueWebdev * 3.6}deg, #000000 0deg)`
 
     if(progressStartValue == 100){
         clearInterval(progress);
