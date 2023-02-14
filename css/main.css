@@ -1465,8 +1465,8 @@ input::-moz-focus-inner {
   text-transform: uppercase;
   letter-spacing: .5rem;
   margin-top: 0;
-  padding-top: 1.6rem;
-  margin-bottom: 12rem;
+  padding-top: 1rem;
+  margin-bottom: 4rem;
   position: relative;
 
   color: #ffffff;
@@ -2167,11 +2167,18 @@ input::-moz-focus-inner {
  * # about
  *
  * ------------------------------------------------------------------- */
+
 .s-about {
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background-color: #000000;
+
   background-image: url("../images/about-bg.svg");
+  background-size: 40%;
+  animation: about-bg-animation linear 30s infinite; 
+}
+@keyframes about-bg-animation {
+  0% {background-position: 0% 0%;}
+  100% {background-position: 0% 570%;}
 }
 
 .s-about .row {
@@ -2943,7 +2950,12 @@ input::-moz-focus-inner {
   padding-bottom: 3.2rem;
 }
 
+.contact-main p {
+  padding-top: 2rem;
+}
+
 .contact-main a {
+  padding-top: 4rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   display: inline-block;
 }
@@ -2964,7 +2976,7 @@ input::-moz-focus-inner {
 }
 
 .contact-infos {
-  margin-top: 5rem;
+  margin-top: 3rem;
   font-family: "IBM Plex Mono", monospace;
   font-weight: 100;
   font-size: 3.5rem;
@@ -3105,7 +3117,7 @@ input::-moz-focus-inner {
  * ## copyright
  * ------------------------------------------------------------------- */
 .ss-opensource {
-  margin-top: 4rem;
+  margin-top: 10rem;
   padding-right: 80px;
   font-family: "IBM Plex Mono", monospace;
   font-weight: 200;
@@ -3113,6 +3125,18 @@ input::-moz-focus-inner {
   text-transform: uppercase;
   letter-spacing: .4rem;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.ss-opensource a {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.ss-opensource a:hover {
+  color: #f52525;
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  display: inline-block;
 }
 
 .ss-opensource span {
@@ -3265,4 +3289,4 @@ html[data-useragent*='rv:11.0'] .ss-go-top::after {
   display: none;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map *                      
