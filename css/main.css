@@ -2528,8 +2528,8 @@ input::-moz-focus-inner {
 
 .circular-progress{
   position: relative;
-  height: 250px;
-  width: 250px;
+  height: 180px;
+  width: 180px;
   border-radius: 50%;
   background: conic-gradient(#f52525 3.6deg, #000000 0deg);
   display: flex;
@@ -2539,16 +2539,17 @@ input::-moz-focus-inner {
 .circular-progress::before{
   content: "";
   position: absolute;
-  height: 210px;
-  width: 210px;
+  height: 155px;
+  width: 155px;
   border-radius: 50%;
   background-color: #000000;
 }
 .progress-value{
+  font-family: "Bebas Neue", cursive;
   position: relative;
-  font-size: 40px;
-  font-weight: 600;
-  color: #f52525;
+  font-size: 4rem;
+  font-weight: 400;
+  color: #ffffff;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2920,10 +2921,26 @@ input::-moz-focus-inner {
  * # contact
  *
  * ------------------------------------------------------------------- */
+ 
+ .s-contact {
+  width: 100%;
+  height: 95vh;
+  min-height: 792px;
+
+  background-image: url(../images/intro-bg.svg);
+  background-size: 110%;
+
+  animation: intro-bg-animation 30s cubic-bezier(0.3,0,0.7,1) infinite; 
+}
+@keyframes intro-bg-animation {
+  0% {background-position: 0% 0%;}
+  50% {background-position: 100% 100%;}
+  100% {background-position: 0% 0%;}
+}
+
 .s-contact {
   padding-top: 9rem;
   padding-bottom: 3.2rem;
-  background-color: #0a0a0a;
 }
 
 .contact-main a {
@@ -3113,24 +3130,30 @@ footer a:visited {
 /* ------------------------------------------------------------------- 
  * ## copyright
  * ------------------------------------------------------------------- */
-.ss-copyright {
+.ss-opensource {
   margin-top: 4rem;
   padding-right: 80px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .4rem;
+  color: rgba(255, 255, 255, 0.5);
 }
 
-.ss-copyright span {
+.ss-opensource span {
   font-size: 2rem;
   display: inline-block;
 }
 
-.ss-copyright span::after {
+.ss-opensource span::after {
   content: "|";
   display: inline-block;
   padding: 0 1rem 0 1.2rem;
   color: rgba(255, 255, 255, 0.1);
 }
 
-.ss-copyright span:last-child::after {
+.ss-opensource span:last-child::after {
   display: none;
 }
 
@@ -3227,17 +3250,17 @@ footer a:visited {
 }
 
 @media screen and (max-width:600px) {
-  .ss-copyright {
+  .ss-opensource {
     margin-top: 0rem;
     padding: 0;
     text-align: center;
   }
 
-  .ss-copyright span {
+  .ss-opensource span {
     display: block;
   }
 
-  .ss-copyright span::after {
+  .ss-opensource span::after {
     display: none;
   }
 
@@ -3249,7 +3272,7 @@ footer a:visited {
 }
 
 @media screen and (max-width:400px) {
-  .ss-copyright span {
+  .ss-opensource span {
     font-size: 13px;
   }
 

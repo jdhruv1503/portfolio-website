@@ -20,12 +20,12 @@ let circularProgressAI = document.querySelector(".ai-progress"),
     progressStartValueSQL = 0,
     progressStartValueWebdev = 0,
 
-    progressEndValueAI = 50,
-    progressEndValueDesign = 85,
-    progressEndValueDevops = 75,
-    progressEndValuePython = 70,
-    progressEndValueSQL = 60,
-    progressEndValueWebdev = 80,
+    progressEndValueAI = 45,
+    progressEndValueDesign = 80,
+    progressEndValueDevops = 70,
+    progressEndValuePython = 65,
+    progressEndValueSQL = 55,
+    progressEndValueWebdev = 75,
     
     speed = 80;
     
