@@ -2924,7 +2924,7 @@ input::-moz-focus-inner {
  
  .s-contact {
   width: 100%;
-  height: 95vh;
+  height: 100vh;
   min-height: 792px;
 
   background-image: url(../images/intro-bg.svg);
@@ -2939,7 +2939,7 @@ input::-moz-focus-inner {
 }
 
 .s-contact {
-  padding-top: 9rem;
+  padding-top: 11rem;
   padding-bottom: 3.2rem;
 }
 
@@ -3101,32 +3101,6 @@ input::-moz-focus-inner {
 
 }
 
-
-
-/* ===================================================================
- * # footer
- *
- * ------------------------------------------------------------------- */
-footer { 
-  line-height: 2;
-  padding-top: 0;
-  padding-bottom: 3.2rem;
-  background-color: #0a0a0a;
-
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 200;
-  font-size: 2rem;
-  text-transform: uppercase;
-  letter-spacing: .4rem;
-  color: rgba(255, 255, 255, 0.5);
-  position: relative;
-}
-
-footer a,
-footer a:visited {
-  color: #ffffff;
-}
-
 /* ------------------------------------------------------------------- 
  * ## copyright
  * ------------------------------------------------------------------- */
@@ -3161,9 +3135,9 @@ footer a:visited {
  * ## go to top
  * ------------------------------------------------------------------- */
 .ss-go-top {
-  position: absolute;
-  top: -1px;
-  right: 6rem;
+  position: relative;
+  left: 100%;
+  bottom: 5vh;
   z-index: 2;
 }
 
@@ -3199,7 +3173,7 @@ footer a:visited {
   display: block;
   width: 1px;
   height: 100px;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.25);
   position: absolute;
   top: -115px;
   left: 50%;
@@ -3214,7 +3188,7 @@ footer a:visited {
   line-height: 30px;
   text-transform: uppercase;
   letter-spacing: .2rem;
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.35);
   transition: all 0.5s;
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
