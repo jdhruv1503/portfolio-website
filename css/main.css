@@ -2798,12 +2798,28 @@ input::-moz-focus-inner {
   font-family: "Bebas Neue", cursive;
   font-size: 2.3rem;
   font-weight: 300;
-  color: #ffffff;
 
-  background: #f52525;
   padding: 0.8rem 1rem;
   border-radius: 10px;
 }
+
+.folio_python {
+  background: #1e52fd;
+  color: #ffffff;
+}
+.folio_illustration {
+  background: #7383df;
+  color: #000000;
+}
+.folio_webdes {
+  background: #e46161;
+  color: #000000;
+}
+.folio_webdev {
+  background: #f52525;
+  color: #ffffff;
+}
+
 
 .item-folio__cat::before {
   content: "      ";
